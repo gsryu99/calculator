@@ -1,4 +1,4 @@
-# ch 5.2.1 ui.py
+# ch 6.3.2 ui.py
 
 from PyQt5.QtWidgets import (QApplication, QWidget,     # 애플르케이션 핸들러와 빈 GUI 위젯
                              QPushButton, QVBoxLayout, QMessageBox,  # QMessageBox : 메시지 박스 위젯
@@ -56,8 +56,9 @@ class View(QWidget):
         self.resize(256,256)
         self.show()
 
-    def activateMessage(self):
-        self.te1.appendPlainText("Button clicked!")
+    def activateMessage(self, text):
+#        self.te1.appendPlainText("Button clicked!")
+        self.te1.appendPlainText(text)
     
     def clearMessage(self):
         self.te1.clear()
