@@ -28,7 +28,7 @@ class View(QWidget):
         self.le2 = QLineEdit('0', self)     # 라인 에디터2 추가
         self.le2.setAlignment(QtCore.Qt.Alignment(2))   # 라인 에디터2 문자열 배치 설정
                                                         # 1: left, 2: right
-
+    
         self.cb = QComboBox(self)      # 콤보박스 추가
         self.cb.addItems(['+', '-', '*', '/', '^'])     # 콤보박스 항목 추가(연산자로 사용)
                                                         # 거듭 제곱 연산자 추가
