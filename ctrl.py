@@ -1,4 +1,4 @@
-# ch 7.5.1 ctrl.py
+# ch 7.5.2 ctrl.py
 
 class Control:
 
@@ -46,4 +46,11 @@ class Control:
         return a/b
 
     def pow(self, a, b):    # 제곱 연산 함수 추가
+        try:
+            if (a==0):
+                raise Exception("Base Error")
+            
+        except Exception as e:
+            return e
+
         return pow(a, b)
