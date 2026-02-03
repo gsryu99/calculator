@@ -1,4 +1,4 @@
-# ch 6.6.1 ui.py
+# ch 7.6.1 ui.py
 
 from PyQt5.QtWidgets import (QApplication, QWidget,     # 애플르케이션 핸들러와 빈 GUI 위젯
                              QPushButton, QVBoxLayout, QMessageBox,  # QMessageBox : 메시지 박스 위젯
@@ -30,8 +30,9 @@ class View(QWidget):
                                                         # 1: left, 2: right
     
         self.cb = QComboBox(self)      # 콤보박스 추가
-        self.cb.addItems(['+', '-', '*', '/', '^'])     # 콤보박스 항목 추가(연산자로 사용)
-                                                        # 거듭 제곱 연산자 추가
+        self.cb.addItems(['+', '-', '*', '/', '^', '%'])    # 콤보박스 항목 추가(연산자로 사용)
+                                                            # 거듭 제곱 연산자 추가
+                                                            # % 연산자 추가
 
         hbox_formular = QHBoxLayout()   # 새로 정의한 위젯을 QHBoxLayout에 배치
         hbox_formular.addWidget(self.le1)
